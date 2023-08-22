@@ -1,0 +1,265 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:wght@200&family=Tilt+Prism&display=swap'); 
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 53, 53);
+}
+
+#main-download-header {
+    width: 100%;
+    height: 10vh;
+    color: rgb(203, 197, 197);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: rgb(226, 218, 218);
+    position: sticky;
+    top: 0;  
+    z-index: 1;
+    background-color: rgb(53, 53, 53);
+
+}
+
+#left {
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    justify-content: baseline;
+
+    width: 10%;
+    height: 100%;
+    /* border: 2px solid red; */
+
+}
+
+.title {
+    margin-left: 0.6vw;
+    position: relative;
+    top: -4px;
+}
+
+#center {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#main-search {
+    height: 5vh;
+    width: 20vw;
+
+    border-radius: 25px 0px 0px 25px;
+    border: .3px solid rgb(226, 218, 218);
+    margin: 0;
+    transition-duration: .200s;
+    outline: none;
+    text-align: center;
+
+
+
+
+}
+
+#main-search:focus {
+    border: 1px solid rgb(251, 99, 99);
+    width: 25vw;
+}
+
+#main-search-button {
+    position: absolute;
+    left: 60%;
+    height: 5vh;
+    width: 4vw;
+    border-radius: 12px;
+    border-radius: 0px 23px 23px 0px;
+    border: .3px solid rgb(254, 254, 254);
+    background-color: rgb(210, 204, 204);
+    cursor: pointer;
+}
+
+#right {
+    height: 100%;
+    width: 10%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: end;
+
+
+}
+
+.option-btn {
+    background: none;
+    border: none;
+    display: flex;
+
+}
+
+#dots:hover {
+    color: white;
+}
+
+.option-dots {
+    margin-right: 12px;
+    display: flex;
+
+}
+
+#dots {
+    font-size: 20px;
+    color: rgb(203, 197, 197);
+}
+
+
+
+.options {
+
+    display: none;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+
+.option-btns {
+    width: 100%;
+    height: 50%;
+    border: none;
+    transition-duration: .200s;
+}
+
+.option-btns:nth-child(1) {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.option-btns:nth-child(2) {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.option-btns:hover {
+    background-color: rgb(135, 135, 136);
+}
+
+
+
+
+
+/*-------------------------------- main notification--------------------- */
+
+#main-notifications-container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 90vh;
+    width: 100%;
+
+    padding-top: 12px;
+   
+   
+   
+ 
+    
+}
+
+
+.notification {
+    border: 0.5px solid rgb(106, 104, 104);
+    display: flex;
+    width: 40%;
+    height: 90px;
+    border-radius: 22px;
+
+    margin-bottom: 12px;
+   
+    
+}
+
+ 
+
+.del{
+    display: none;
+}
+
+/* first block */
+.notification-text {
+     
+    display: flex;
+    width: 90%;
+}
+
+.notification-img {
+    
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width:  0px 0.5px 0px 0px;
+    border-style: solid;
+    border-color: rgb(106, 104, 104);
+    margin-right: 12px;
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+
+.notificationtxt {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 900;
+    color: bisque;
+    font-family: 'Mynerve', cursive;
+    font-family: 'Poppins', sans-serif;
+     
+}
+
+
+/* second block */
+
+
+.remove-notification{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.close-btn{
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: rgb(115, 112, 110);
+    
+}
+
+.close-btn:hover{
+    color: whitesmoke;
+}
+

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pop-up Notification</title>
+  <link rel="stylesheet" type="text/css" href="notifications-style.css">
+  <link rel="stylesheet" type="text/css" href="res-notifications-style.css">
+
+</head>
+
+<body >
+  <div id="main-download-header">
+    <div id="left" onclick="remove()">
+      <span class="image"><ion-icon name="logo-apple-ar" id="logo"></ion-icon></span>
+      <span class="title">Downloads</span>
+    </div>
+    <div id="center" onclick="remove()">
+      <input type="search" name="" id="main-search" placeholder="Search">
+      <button type="submit" id="main-search-button" title="search">search</button>
+    </div>
+
+
+
+
+
+    <div id="right">
+      <div class="option-dots">
+
+        <div class="options"  >
+          <button class="option-btns">Clear all</button>
+          <button class="option-btns">Sort</button>
+        </div>
+
+        <button class="option-btn" onclick="active()">
+          <ion-icon name="ellipsis-vertical-outline" id="dots"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="main-notifications-container" onclick="remove()">
+
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii1       </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(0)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii2        </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(1)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii        </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(2)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii3        </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(3)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii4        </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(4)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii5        </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(5)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii6        </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(6)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii7        </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(7)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii8        </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(8)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii9       </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(9)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification-text">
+        <span class="notification-img">
+          <img src="./images/logo.jpg" alt="" class="img">
+        </span>
+        <span class="notificationtxt">
+hii10       </span>
+
+      </div>
+      <div class="remove-notification">
+        <button class="close-btn" onclick="del(10)">
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+    
+
+
+     
+    
+
+
+    
+
+
+
+
+  </div>
+ 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="not-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hyper-web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="main">
+
+
+        <div class="direct-links">
+            <div class="profile">
+                <div class="logo">
+                    <span class="image">
+                        <img src="./images/logo.jpg" id="profile-logo" alt="profile logo">
+                    </span>
+                    <span><button class="visit-profile"> <a href="#">visit profile</a> </button></span>
+                </div>
+
+                <div class="links">
+                    <a href="" class="link-tab">Profile</a>
+                    <a href="" class="link-tab">Links</a>
+                    <a href="" class="link-tab">About</a>
+                    <a href="" class="link-tab">Log out</a>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="icons">
+                <a href="#" class="icons-list" title="Youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="notificaton.html" class="icons-list" title="Notifications"><ion-icon
+                        name="notifications-outline"></ion-icon></a>
+                <a href="#" class="icons-list" title="Search"><ion-icon name="search-outline"></ion-icon></a>
+                <a href="#" class="icons-list" title="Setting"><ion-icon name="settings-outline"></ion-icon></a>
+                <a href="#" class="icons-list" title="Share"><ion-icon name="share-social-outline" onclick="rn()"></ion-icon></a>
+
+                <div id="popup">
+                    <div id="upper-part">
+                        <div id="text">Share in a post</div>
+
+                        <div id="text"> <button class="share-post">
+                                create post
+                            </button>
+
+                        </div>
+                    </div>
+                    <div id="center-part">
+                        <ion-icon name="logo-tumblr" class="pop-share"></ion-icon>
+                        <ion-icon name="logo-pinterest" class="pop-share"></ion-icon>
+                        <ion-icon name="logo-linkedin" class="pop-share"></ion-icon>
+                        <ion-icon name="logo-facebook" class="pop-share"></ion-icon>
+                        <ion-icon name="logo-instagram" class="pop-share"></ion-icon>
+                        <ion-icon name="logo-whatsapp" class="pop-share"></ion-icon>
+
+                    </div>
+                    <div id="lower-part">
+
+
+                        <ion-icon name="close-outline" class="pop-share-1" onclick="rn()"></ion-icon>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="main-body-page">
+
+            <div class="header">
+
+
+
+                <div class="website-header">
+                    <div class="header-part-1">
+                        <span class="search-bar">
+                            <input type="search" name="" id="main-search" placeholder="Search">
+                            <button type="submit" id="main-search-button" title="search">search</button>
+                        </span>
+                    </div>
+                    <div class="header-part-2">
+                        <span class="hyper-web-icon">
+                            <span class="hyper-web-text"> <a href="https://www.instagram.com/asheesh_kumar_003/">
+                                    HyperWeb</a></span>
+                            <ion-icon name="logo-apple-ar" id="hyper-web"></ion-icon>
+                        </span>
+                    </div>
+                </div>
+
+
+
+                <div class="content-categories">
+                    <div class="content-option">
+                        <input type="button" value="Home" class="content-option-button"
+                            onclick="filtered_content('home')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="Tech" class="content-option-button"
+                            onclick="filtered_content('tech')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="Coding" class="content-option-button"
+                            onclick="filtered_content('coding')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="Music" class="content-option-button" onclick="filtered_content('')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="Sports" class="content-option-button"
+                            onclick="filtered_content('')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="Study" class="content-option-button" onclick="filtered_content('')">
+                    </div>
+
+                    <div class="content-option">
+                        <input type="button" value="Sidhu" class="content-option-button" onclick="filtered_content('')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="Wierd" class="content-option-button" onclick="filtered_content('')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="energy" class="content-option-button"
+                            onclick="filtered_content('')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="Mixin" class="content-option-button" onclick="filtered_content('')">
+                    </div>
+
+                    <div class="content-option">
+                        <input type="button" value="Playlist" class="content-option-button"
+                            onclick="filtered_content('')">
+                    </div>
+                    <div class="content-option">
+                        <input type="button" value="Reload" class="content-option-button"
+                            onclick="filtered_content('reload')">
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="content-page">
+
+
+                <div class="home active " id="home">
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/sGnBlSrC7XI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Ohh My God!</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Bushman</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/691msNjV6eY" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Realme 11 pro</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Technical guruji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/hiii7hkbQ4Q" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title"> India journey from zero to infinity (& beyond) ! </div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Ted Talks</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/gfDE2a7MKjA" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Python one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/GYwQRU-bDOs" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title"> I phone 15 series</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Technical guruji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/91Q6RvKvd7o" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Starbucks landing page</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">online turtorial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/cwnVQUpZm9Y" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">wohha!</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Bushman</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/rWQeqH526KA" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Login page</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">online turtorial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/3HqozcC0anc" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Ronaldo🤩</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Hum jitenge</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/t9fP_b8Ebow" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Stand alone to stand apart </div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link"> Ted Talks</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/JL7UYS4-Ppk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">666 rule</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Hum jitenge</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+                <!-- technical videos playlist -->
+
+                <div class="technological-videos  " id="technological-videos">
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/691msNjV6eY" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Realme 11 pro</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Technical guruji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/GYwQRU-bDOs" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title"> I phone 15 series</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Technical guruji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/t-OyxDHELFU" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Transparent phone</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Tech Burner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/t-OyxDHELFU" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Transparent phone</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Tech Burner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/GYwQRU-bDOs" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title"> I phone 15 series</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Technical guruji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/t-OyxDHELFU" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Transparent phone</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Tech Burner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/GYwQRU-bDOs" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title"> I phone 15 series</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Technical guruji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/t-OyxDHELFU" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Transparent phone</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Tech Burner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/GYwQRU-bDOs" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title"> I phone 15 series</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Technical guruji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/t-OyxDHELFU" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Transparent phone</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Tech Burner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/GYwQRU-bDOs" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title"> I phone 15 series</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Technical guruji</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/t-OyxDHELFU" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">Transparent phone</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">Tech Burner</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="coding-videos" id="coding-videos">
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-posts">
+                        <div class="video-portion">
+                            <iframe height="140px" width="350px" class="video"
+                                src="https://www.youtube.com/embed/ZSPZob_1TOk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="descrition">
+                            <div class="chnnl-logo">
+                                <img src="./images/logo.jpg" alt="" class="channel-logo">
+                            </div>
+                            <div class="title">
+                                <div class="video-title">C one shot</div>
+                                <div class="chnnl-link">
+                                    <a href="#" class="channel-link">code with harry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
